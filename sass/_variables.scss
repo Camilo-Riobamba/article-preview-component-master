@@ -1,0 +1,34 @@
+//fonts
+@font-face {
+    font-family: "Big Shoulders Display";
+    src: url("../fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Lexend Deca";
+    src: url("../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
+}
+
+$font-size: 15px;
+
+// colors
+$primary: (
+    "Bright orange": hsl(31, 77%, 52%),
+    "Dark cyan": hsl(184, 100%, 22%),
+    "Very dark cyan": hsl(179, 100%, 13%)
+);
+
+$neutral: (
+    "Transparent white": hsla(0, 0%, 100%, 0.75),
+    "Very light gray": hsl(0, 0%, 95%)
+);
+
+//breakpoints
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

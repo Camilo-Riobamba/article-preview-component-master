@@ -1,0 +1,184 @@
+@use "sass:map";
+
+html {
+    font-size: $font-size;
+
+    *{
+        box-sizing: border-box;
+    }
+}
+
+// fonts
+body{
+    font-family: "Lexend deca";
+
+    h2{
+        font-family: "Big Shoulders Display";
+        font-size: 2rem;
+    }
+}
+
+.text-light{
+    color: map.get($neutral, "Transparent white");
+}
+
+.text-very-light{
+    color: map.get($neutral, "Very light gray");
+}
+
+.text-orange{
+    color: map.get($primary, "Bright orange");
+}
+
+.text-cyan{
+    color: map.get($primary, "Dark cyan");
+}
+
+.text-dark-cyan{
+    color: map.get($primary, "Very dark cyan");
+}
+
+// containers
+@mixin flex($justify: center, $align: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.container{
+    @include flex;
+}
+
+@include breakpoint(min, sm){
+    .container-sm{
+        @include flex;
+    }
+}
+
+// width
+.w-0{
+    width: 0%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+@include breakpoint(min, sm){
+    .w-0-sm{
+        width: 0%;
+    }
+    
+    .w-25-sm{
+        width: 25%;
+    }
+    
+    .w-50-sm{
+        width: 50%;
+    }
+    
+    .w-75-sm{
+        width: 75%;
+    }
+    
+    .w-100-sm{
+        width: 100%;
+    }
+}
+
+//padding
+.p-0{
+    padding: 0rem;
+}
+
+.p-1{
+    padding: 0.5rem;
+}
+
+.p-2{
+    padding: 1rem;
+}
+
+.p-3{
+    padding: 2rem;
+}
+
+// margin
+.m-0{
+    margin: 0rem;
+}
+
+.m-1{
+    margin: 0.5rem;
+}
+
+.m-2{
+    margin: 1rem;
+}
+
+.m-3{
+    margin: 2rem;
+}
+
+// backgrounds
+.bg-orange{
+    background-color: map.get($primary, "Bright orange");
+}
+
+.bg-cyan{
+    background-color: map.get($primary, "Dark cyan");
+}
+
+.bg-dark-cyan{
+    background-color: map.get($primary, "Very dark cyan");
+}
+
+.bg-light{
+    background-color: map.get($neutral, "Very light gray");
+}
+
+// displays
+.d-block{
+    display: block;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+// borders
+.border-radius{
+    border-radius: 1rem;
+}
+
+// overflow
+.overflow-hidden{
+    overflow: hidden;
+}
+
+// button
+.button{
+    display: block;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 1rem;
+
+    text-decoration: none;
+}
+
+// shadow
+.box-shadow{
+    box-shadow: 0 0 5px rgba(#000, 0.5);
+}
