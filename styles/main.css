@@ -1,44 +1,107 @@
 @font-face {
-  font-family: "Big Shoulders Display";
-  src: url("../fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf");
+  font-family: "Manrope";
+  src: url("../fonts/manrope/Manrope-VariableFont_wght.ttf");
 }
-@font-face {
-  font-family: "Lexend Deca";
-  src: url("../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf");
-}
-html {
-  font-size: 15px;
-}
-html * {
-  box-sizing: border-box;
+.bg-white {
+  background-color: #fff;
 }
 
-body {
-  font-family: "Lexend deca";
-}
-body h2 {
-  font-family: "Big Shoulders Display";
-  font-size: 2rem;
+.radius-none {
+  border-radius: unset;
 }
 
-.text-light {
-  color: rgba(255, 255, 255, 0.75);
+.radius {
+  border-radius: 1rem;
 }
 
-.text-very-light {
-  color: #f2f2f2;
+.radius-l {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
-.text-orange {
-  color: #e38826;
+.radius-r {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
-.text-cyan {
-  color: #006970;
+.radius-t {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
-.text-dark-cyan {
-  color: #004241;
+.radius-b {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+@media (min-width: 576px) {
+  .radius-none-sm {
+    border-radius: unset;
+  }
+
+  .radius-sm {
+    border-radius: 1rem;
+  }
+
+  .radius-l-sm {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .radius-r-sm {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .radius-t-sm {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .radius-b-sm {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .radius-none-md {
+    border-radius: unset;
+  }
+
+  .radius-md {
+    border-radius: 1rem;
+  }
+
+  .radius-l-md {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .radius-r-md {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .radius-t-md {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .radius-b-md {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
+.circle {
+  border-radius: 1000px;
+}
+
+.button {
+  display: block;
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 .container {
@@ -54,47 +117,66 @@ body h2 {
     align-items: center;
   }
 }
-.w-0 {
-  width: 0%;
+@media (min-width: 768px) {
+  .container-md {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.d-block {
+  display: block;
 }
 
-.w-25 {
-  width: 25%;
+.d-inline-block {
+  display: inline-block;
 }
 
-.w-50 {
-  width: 50%;
-}
-
-.w-75 {
-  width: 75%;
-}
-
-.w-100 {
-  width: 100%;
+.d-none {
+  display: none;
 }
 
 @media (min-width: 576px) {
-  .w-0-sm {
-    width: 0%;
+  .d-block-sm {
+    display: block;
   }
 
-  .w-25-sm {
-    width: 25%;
+  .d-inline-block-sm {
+    display: inline-block;
   }
 
-  .w-50-sm {
-    width: 50%;
-  }
-
-  .w-75-sm {
-    width: 75%;
-  }
-
-  .w-100-sm {
-    width: 100%;
+  .d-none-sm {
+    display: none;
   }
 }
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.box-shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.125);
+}
+
 .p-0 {
   padding: 0rem;
 }
@@ -127,48 +209,229 @@ body h2 {
   margin: 2rem;
 }
 
-.bg-orange {
-  background-color: #e38826;
+.mt-0 {
+  margin-top: 0rem;
 }
 
-.bg-cyan {
-  background-color: #006970;
+.mt-1 {
+  margin-top: 0.5rem;
 }
 
-.bg-dark-cyan {
-  background-color: #004241;
+.mt-2 {
+  margin-top: 1rem;
 }
 
-.bg-light {
-  background-color: #f2f2f2;
+.mt-3 {
+  margin-top: 2rem;
 }
 
-.d-block {
-  display: block;
+.w-10 {
+  width: 10%;
 }
 
-.d-inline-block {
-  display: inline-block;
+.w-20 {
+  width: 20%;
 }
 
-.border-radius {
-  border-radius: 1rem;
+.w-30 {
+  width: 30%;
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.w-40 {
+  width: 40%;
 }
 
-.button {
-  display: block;
-  width: fit-content;
-  border-radius: 2rem;
-  padding: 1rem;
-  text-decoration: none;
+.w-50 {
+  width: 50%;
 }
 
-.box-shadow {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .w-10-sm {
+    width: 10%;
+  }
+
+  .w-20-sm {
+    width: 20%;
+  }
+
+  .w-30-sm {
+    width: 30%;
+  }
+
+  .w-40-sm {
+    width: 40%;
+  }
+
+  .w-50-sm {
+    width: 50%;
+  }
+
+  .w-60-sm {
+    width: 60%;
+  }
+
+  .w-70-sm {
+    width: 70%;
+  }
+
+  .w-80-sm {
+    width: 80%;
+  }
+
+  .w-90-sm {
+    width: 90%;
+  }
+
+  .w-100-sm {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .w-10-md {
+    width: 10%;
+  }
+
+  .w-20-md {
+    width: 20%;
+  }
+
+  .w-30-md {
+    width: 30%;
+  }
+
+  .w-40-md {
+    width: 40%;
+  }
+
+  .w-50-md {
+    width: 50%;
+  }
+
+  .w-60-md {
+    width: 60%;
+  }
+
+  .w-70-md {
+    width: 70%;
+  }
+
+  .w-80-md {
+    width: 80%;
+  }
+
+  .w-90-md {
+    width: 90%;
+  }
+
+  .w-100-md {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .w-10-lg {
+    width: 10%;
+  }
+
+  .w-20-lg {
+    width: 20%;
+  }
+
+  .w-30-lg {
+    width: 30%;
+  }
+
+  .w-40-lg {
+    width: 40%;
+  }
+
+  .w-50-lg {
+    width: 50%;
+  }
+
+  .w-60-lg {
+    width: 60%;
+  }
+
+  .w-70-lg {
+    width: 70%;
+  }
+
+  .w-80-lg {
+    width: 80%;
+  }
+
+  .w-90-lg {
+    width: 90%;
+  }
+
+  .w-100-lg {
+    width: 100%;
+  }
+}
+.text-dark-grayish-blue {
+  color: #48556a;
+}
+
+.text-dark-blue {
+  color: #6d7f97;
+}
+
+.text-grayish-blue {
+  color: #9eafc2;
+}
+
+.text-light-grayish-blue {
+  color: #ecf2f8;
+}
+
+.bg-dark-grayish-blue {
+  background-color: #48556a;
+}
+
+.bg-dark-blue {
+  background-color: #6d7f97;
+}
+
+.bg-graysih-blue {
+  background-color: #9eafc2;
+}
+
+.bg-light-grayish-blue {
+  background-color: #ecf2f8;
+}
+
+.drawer {
+  background-image: url("../images/drawers.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+html {
+  font-size: 14px;
+  font-family: "Manrope";
+}
+html * {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=main.css.map */
